@@ -1,85 +1,67 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.5s; /* Adicionado efeito de transição para alteração de fundo */
+    background-color: #000; /* Preto sólido como fundo principal */
+    color: #fff; /* Texto branco */
 }
 
 header {
-    background-color: #6a1b9a;
-    color: #fff;
+    background-color: #080808; /* Rosa forte */
     text-align: center;
-    padding: 20px;
+    padding: 1em;
+}
+
+.title {
+    color: #8a2be2; /* Roxo */
 }
 
 section {
     margin: 20px;
-}
-
-.topic {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: box-shadow 0.3s; /* Adicionado efeito de transição para destaque de tópicos */
-}
-
-.topic:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #6a1b9a;
+    color: #ff03c8; /* Rosa mais claro */
 }
 
 p {
-    line-height: 1.5;
+    color: #777777; /* Texto mais escuro */
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 8px;
+    list-style-type: square;
+    color: #777;
 }
 
 pre {
-    background-color: #512da8;
-    color: #fff;
+    background-color: #f4f4f4;
     padding: 10px;
-    border-radius: 5px;
     overflow-x: auto;
+    border-radius: 8px;
 }
 
-footer {
-    background: #6a1b9a;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+code {
+    font-family: 'Courier New', monospace;
+    color: #333;
+}
+
+#background-video {
     position: fixed;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Certifique-se de que o vídeo está atrás do conteúdo */
 }
 
-button {
-    margin: 5px;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: #4a148c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #6a1b9a;
+#content {
+    position: relative;
+    z-index: 1; /* Certifique-se de que o conteúdo está à frente do vídeo */
 }
